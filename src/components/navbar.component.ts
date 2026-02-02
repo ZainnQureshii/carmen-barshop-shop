@@ -10,15 +10,15 @@ import { SmoothScrollDirective } from '../directives/smooth-scroll.directive';
     '(window:keydown.escape)': 'closeMobileMenu()'
   },
   template: `
-    <nav 
+    <nav
       class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b"
-      [class.bg-white/90]="isScrolled() || isMobileMenuOpen()"
-      [class.backdrop-blur-md]="isScrolled() || isMobileMenuOpen()"
-      [class.bg-transparent]="!isScrolled() && !isMobileMenuOpen()"
-      [class.py-4]="!isScrolled()"
-      [class.py-3]="isScrolled()"
-      [class.border-transparent]="!isScrolled() && !isMobileMenuOpen()"
+      [class.bg-white]="isScrolled() || isMobileMenuOpen()"
+      [class.shadow-sm]="isScrolled() || isMobileMenuOpen()"
       [class.border-neutral-200]="isScrolled() || isMobileMenuOpen()"
+      [class.bg-transparent]="!isScrolled() && !isMobileMenuOpen()"
+      [class.border-transparent]="!isScrolled() && !isMobileMenuOpen()"
+      [class.py-5]="!isScrolled()"
+      [class.py-3]="isScrolled()"
     >
       <div class="container mx-auto px-6 flex justify-between items-center">
         <!-- Logo -->
@@ -31,7 +31,7 @@ import { SmoothScrollDirective } from '../directives/smooth-scroll.directive';
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center gap-8">
           @for (link of links; track link.name) {
-            <a [href]="link.href" 
+            <a [href]="link.href"
                appSmoothScroll
                class="text-sm font-medium uppercase tracking-widest hover:text-amber-600 transition-colors duration-300"
                [class.text-neutral-600]="isScrolled()"
@@ -40,7 +40,7 @@ import { SmoothScrollDirective } from '../directives/smooth-scroll.directive';
             </a>
           }
 
-          <a href="#book" class="px-5 py-2 bg-neutral-900 text-white text-sm font-medium tracking-wide hover:opacity-90 transition-opacity">
+          <a href="#book" class="px-5 py-2 bg-neutral-900 text-white text-sm font-medium tracking-wide hover:bg-neutral-800 transition-colors">
             BOOK NOW
           </a>
         </div>
@@ -100,7 +100,7 @@ export class NavbarComponent {
   ];
 
   updateScrollState() {
-    this.isScrolled.set(window.scrollY > 20);
+    this.isScrolled.set(window.scrollY > 50);
   }
 
   toggleMobileMenu() {
