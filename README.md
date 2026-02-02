@@ -1,20 +1,72 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# CARMEN Hair Salon
 
-# Run and deploy your AI Studio app
+A premium, modern landing page for a high-end barbershop in Osijek, Croatia. Built with Angular 21 and Tailwind CSS, featuring editorial design aesthetics and smooth scroll animations.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1iokrEhhXJKPaPvjcTrCMhC4BWWKmQnu8
+- Responsive design optimized for all devices
+- Dark mode support
+- Smooth scroll animations with Intersection Observer
+- Online booking form with validation
+- Interactive service menu with pricing
+- Team showcase section
+- Google Maps integration
+- SEO optimized with Open Graph tags
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework:** Angular 21 (Standalone Components)
+- **Styling:** Tailwind CSS
+- **Animations:** Custom scroll-reveal directives
+- **Forms:** Angular Reactive Forms
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd carmen-hair-salon
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:4200](http://localhost:4200) in your browser.
+
+## Project Structure
+
+```
+carmen-hair-salon/
+├── src/
+│   ├── components/       # Angular standalone components
+│   ├── directives/       # Custom directives (scroll-reveal, smooth-scroll)
+│   ├── services/         # Angular services
+│   └── app.component.ts  # Root component
+├── index.html            # Main HTML file
+├── index.tsx             # Application bootstrap
+└── angular.json          # Angular configuration
+```
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+
+## License
+
+MIT
