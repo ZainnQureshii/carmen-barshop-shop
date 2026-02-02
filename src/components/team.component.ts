@@ -9,8 +9,8 @@ import { ScrollRevealDirective } from '../directives/scroll-reveal.directive';
     <section id="team" class="scroll-mt-28 py-24 bg-white dark:bg-neutral-900 transition-colors duration-500 overflow-hidden">
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
-           <h2 appScrollReveal class="text-4xl md:text-5xl font-serif text-neutral-900 dark:text-white">Meet the Experts</h2>
-           <p appScrollReveal [delay]="100" class="text-neutral-500 max-w-sm text-right md:text-left">Master barbers dedicated to the craft of traditional and modern grooming.</p>
+           <h2 appScrollReveal class="text-4xl md:text-5xl font-serif text-neutral-900 dark:text-white">The Artisans</h2>
+           <p appScrollReveal [delay]="100" class="text-neutral-500 max-w-sm text-right md:text-left">A collective of unparalleled skill. United by a dedication to perfection.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -36,19 +36,19 @@ export class TeamComponent {
       name: "Marko Horvat",
       role: "Head Barber",
       image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
-      bio: "10+ years of experience blending classic Italian techniques with modern texture. Master of the straight razor shave."
+      bio: "A vanguard of the craft. 10 years perfecting the delicate balance between Italian tradition and modern edge."
     },
     {
       name: "Ivan Kovač",
       role: "Senior Stylist",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
-      bio: "Specializes in skin fades and beard sculpting. Detail-oriented and passionate about hair health."
+      bio: "Architect of the skin fade. His precision is an obsession, ensuring every gradient is flawless."
     },
     {
       name: "Elena Jurić",
       role: "Color Specialist",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
-      bio: "The creative eye for color. Expert in grey blending and natural tone enhancement."
+      bio: "The color authority. Specializing in subtle, natural, undefinable improvements that take years off."
     }
   ];
 }

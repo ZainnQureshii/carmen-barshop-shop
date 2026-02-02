@@ -9,9 +9,9 @@ import { ScrollRevealDirective } from '../directives/scroll-reveal.directive';
     <section id="gallery" class="scroll-mt-28 py-24 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-500">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-           <span appScrollReveal class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600 mb-2 block">Our Craft</span>
-           <h2 appScrollReveal [delay]="100" class="text-4xl md:text-5xl font-serif text-neutral-900 dark:text-white">Fresh Cuts, Real Results</h2>
-           <p appScrollReveal [delay]="200" class="mt-4 text-neutral-500 max-w-xl mx-auto">Every client leaves looking sharp. Here's proof from our chairs.</p>
+           <span appScrollReveal class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600 mb-2 block">The Portfolio</span>
+           <h2 appScrollReveal [delay]="100" class="text-4xl md:text-5xl font-serif text-neutral-900 dark:text-white">Visual Proof</h2>
+           <p appScrollReveal [delay]="200" class="mt-4 text-neutral-500 max-w-xl mx-auto">No filters. Just precision. The results speak for themselves.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px] md:auto-rows-[400px]">

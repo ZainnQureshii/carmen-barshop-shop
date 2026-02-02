@@ -1,20 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ScrollRevealDirective } from '../directives/scroll-reveal.directive';
-import { SmoothScrollDirective } from '../directives/smooth-scroll.directive';
 
 @Component({
   selector: 'app-services',
-  imports: [CommonModule, ScrollRevealDirective, SmoothScrollDirective],
+  imports: [CommonModule, ScrollRevealDirective],
   template: `
     <section id="services" class="scroll-mt-28 py-24 bg-white dark:bg-neutral-900 transition-colors duration-500">
       <div class="container mx-auto px-6">
-        
+
         <!-- Value Proposition: Why pay more? (Solving Problem #2) -->
         <div class="mb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-b border-neutral-200 dark:border-neutral-800 pb-20">
             <div class="lg:col-span-5" appScrollReveal>
-                <span class="text-amber-600 dark:text-amber-500 font-bold uppercase tracking-widest text-xs mb-4 block">The Carmen Standard</span>
-                <h2 class="text-4xl md:text-5xl font-serif text-neutral-900 dark:text-white mb-6">More Than Just a Haircut.</h2>
+                <span class="text-amber-600 dark:text-amber-500 font-bold uppercase tracking-widest text-xs mb-4 block">The Ritual</span>
+                <h2 class="text-4xl md:text-5xl font-serif text-neutral-900 dark:text-white mb-6">An Experience, Not an Errand.</h2>
                 <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed text-lg">
                     We believe in the ritual of grooming. We don't rush. We don't skip steps. Every service at Carmen is designed to be a reset button for your week.
                 </p>
@@ -25,28 +24,28 @@ import { SmoothScrollDirective } from '../directives/smooth-scroll.directive';
                         <span class="font-serif font-bold">1</span>
                     </div>
                     <h4 class="font-bold text-neutral-900 dark:text-white text-sm uppercase tracking-wide">Consultation</h4>
-                    <p class="text-xs text-neutral-500">We analyze your head shape and hair type first.</p>
+                    <p class="text-xs text-neutral-500">Analysis of head shape, hair type, and lifestyle.</p>
                 </div>
                 <div class="space-y-3">
                     <div class="w-10 h-10 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-amber-600">
                         <span class="font-serif font-bold">2</span>
                     </div>
                     <h4 class="font-bold text-neutral-900 dark:text-white text-sm uppercase tracking-wide">Precision Cut</h4>
-                    <p class="text-xs text-neutral-500">No rough handling. Pure technique.</p>
+                    <p class="text-xs text-neutral-500">No rough handling. Pure, deliberate technique.</p>
                 </div>
                 <div class="space-y-3">
                     <div class="w-10 h-10 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-amber-600">
                         <span class="font-serif font-bold">3</span>
                     </div>
                     <h4 class="font-bold text-neutral-900 dark:text-white text-sm uppercase tracking-wide">Hot Towel</h4>
-                    <p class="text-xs text-neutral-500">Relax with a steaming towel finish.</p>
+                    <p class="text-xs text-neutral-500">Decompress with our signature steamed finish.</p>
                 </div>
                 <div class="space-y-3">
                     <div class="w-10 h-10 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-amber-600">
                         <span class="font-serif font-bold">4</span>
                     </div>
                     <h4 class="font-bold text-neutral-900 dark:text-white text-sm uppercase tracking-wide">Product & Style</h4>
-                    <p class="text-xs text-neutral-500">Leave looking exactly how you wanted.</p>
+                    <p class="text-xs text-neutral-500">Walk out ready to command the room.</p>
                 </div>
             </div>
         </div>
@@ -65,7 +64,7 @@ import { SmoothScrollDirective } from '../directives/smooth-scroll.directive';
           @for (service of services; track service.title; let i = $index) {
             <div appScrollReveal [delay]="i * 100" class="group p-8 border border-neutral-200 dark:border-neutral-800 hover:border-amber-500 dark:hover:border-amber-500 transition-colors duration-300 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-xl hover:shadow-neutral-200/50 dark:hover:shadow-none relative overflow-hidden">
               <div class="absolute top-0 left-0 w-1 h-full bg-amber-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-              
+
               <div class="flex justify-between items-start mb-4">
                 <h3 class="text-xl font-serif text-neutral-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-500 transition-colors">{{ service.title }}</h3>
                 <span class="text-lg font-medium text-neutral-900 dark:text-white">{{ service.price }}</span>
@@ -86,11 +85,11 @@ import { SmoothScrollDirective } from '../directives/smooth-scroll.directive';
 })
 export class ServicesComponent {
   services = [
-    { title: "Men's Haircut", price: "€25", duration: "45 min", desc: "Consultation, wash, precision cut, hot towel, and styling." },
-    { title: "Beard Sculpt & Trim", price: "€15", duration: "30 min", desc: "Razor lineup, shape definition, hot towel, and beard oil." },
-    { title: "The Carmen Combo", price: "€35", duration: "75 min", desc: "Our signature haircut plus full beard service. The total reset." },
-    { title: "Buzz Cut", price: "€15", duration: "20 min", desc: "Single grade cut with tapered edges and neck shave." },
-    { title: "Grey Blending", price: "€20", duration: "30 min", desc: "Subtle, natural-looking color to reduce grey appearance." },
-    { title: "Father & Son", price: "€40", duration: "60 min", desc: "Two signature haircuts. Quality time, quality style." }
+    { title: "The Signature Cut", price: "€25", duration: "45 min", desc: "Expert consultation, precision cut, wash, hot towel finish, and premium styling." },
+    { title: "Bespoke Beard Sculpting", price: "€15", duration: "30 min", desc: "Hot towel softening, straight razor lineup, length definition, and beard oil treatment." },
+    { title: "The Executive Package", price: "€35", duration: "75 min", desc: "Our signature haircut combined with the full beard service. The complete transformation." },
+    { title: "Precision Buzz", price: "€15", duration: "20 min", desc: "Uniform grade cut with meticulously tapered edges and neck shave." },
+    { title: "Executive Grey Blending", price: "€20", duration: "30 min", desc: "Subtle, natural-looking camouflage to reduce grey appearance without the 'dyed' look." },
+    { title: "Legacy Service (Father & Son)", price: "€40", duration: "60 min", desc: "Two signature haircuts. Passing down the tradition of excellence." }
   ];
 }

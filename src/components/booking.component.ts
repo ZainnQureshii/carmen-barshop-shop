@@ -10,8 +10,8 @@ import { ScrollRevealDirective } from '../directives/scroll-reveal.directive';
     <section id="book" class="scroll-mt-28 py-24 bg-neutral-50 dark:bg-neutral-950 transition-colors duration-500">
       <div class="container mx-auto px-6 max-w-4xl">
         <div class="text-center mb-12">
-           <h2 appScrollReveal class="text-4xl md:text-5xl font-serif text-neutral-900 dark:text-white mb-4">Book Your Visit</h2>
-           <p appScrollReveal [delay]="100" class="text-neutral-500">Secure your spot. Walk-ins welcome based on availability.</p>
+           <h2 appScrollReveal class="text-4xl md:text-5xl font-serif text-neutral-900 dark:text-white mb-4">Claim Your Chair</h2>
+           <p appScrollReveal [delay]="100" class="text-neutral-500">Excellence is in high demand. Reserve your time.</p>
         </div>
 
         <div appScrollReveal [delay]="200" class="bg-white dark:bg-neutral-900 p-8 md:p-12 shadow-2xl shadow-neutral-200/50 dark:shadow-none border border-neutral-100 dark:border-neutral-800">
@@ -57,12 +57,12 @@ import { ScrollRevealDirective } from '../directives/scroll-reveal.directive';
                   <div class="relative">
                     <select id="service" formControlName="service" class="w-full bg-neutral-50 dark:bg-neutral-800 border-b-2 border-neutral-200 dark:border-neutral-700 focus:border-amber-500 dark:focus:border-amber-500 outline-none px-4 py-3 transition-colors text-neutral-900 dark:text-white appearance-none cursor-pointer">
                       <option value="" disabled>Select a service</option>
-                      <option value="cut">Men's Haircut - €25</option>
-                      <option value="beard">Beard Sculpt & Trim - €15</option>
-                      <option value="combo">The Carmen Combo - €35</option>
-                      <option value="buzz">Buzz Cut - €15</option>
-                      <option value="grey">Grey Blending - €20</option>
-                      <option value="fatherson">Father & Son - €40</option>
+                      <option value="cut">The Signature Cut - €25</option>
+                      <option value="beard">Bespoke Beard Sculpting - €15</option>
+                      <option value="combo">The Executive Package - €35</option>
+                      <option value="buzz">Precision Buzz - €15</option>
+                      <option value="grey">Executive Grey Blending - €20</option>
+                      <option value="fatherson">Legacy Service (Father & Son) - €40</option>
                     </select>
                     <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-500 pointer-events-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
                   </div>
