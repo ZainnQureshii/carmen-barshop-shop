@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CARMEN - Premium men's grooming salon in Osijek, Croatia. Expert haircuts, beard sculpting, and grooming services by European-trained barbers.">
+  <meta name="keywords" content="barbershop, haircut, beard trim, Osijek, Croatia, men's grooming, frizerski salon">
+  <meta name="author" content="Carmen Salon">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CARMEN | Premium Men's Grooming in Osijek">
+  <meta property="og:description" content="Expert haircuts and beard sculpting by European-trained barbers. Book your appointment today.">
+  <meta property="og:locale" content="hr_HR">
+
+  <title>CARMEN | Frizerski Salon Osijek</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6, .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Animation Utilities */
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .stagger-1 { transition-delay: 100ms; }
+    .stagger-2 { transition-delay: 200ms; }
+    .stagger-3 { transition-delay: 300ms; }
+    .stagger-4 { transition-delay: 400ms; }
+    
+    .clip-reveal {
+      clip-path: inset(100% 0 0 0);
+      transition: clip-path 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .clip-reveal.visible {
+      clip-path: inset(0 0 0 0);
+    }
+
+    /* Hero Ambient Motion */
+    @keyframes subtle-drift {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-10px, -15px) scale(1.05); }
+      100% { transform: translate(0, 0) scale(1); }
+    }
+    .animate-drift {
+      animation: subtle-drift 15s infinite ease-in-out;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "rxjs": "https://esm.sh/rxjs@^7.8.2?conditions=es2015",
+    "rxjs/operators": "https://esm.sh/rxjs@^7.8.2/operators?conditions=es2015",
+    "rxjs/ajax": "https://esm.sh/rxjs@^7.8.2/ajax?conditions=es2015",
+    "rxjs/webSocket": "https://esm.sh/rxjs@^7.8.2/webSocket?conditions=es2015",
+    "rxjs/testing": "https://esm.sh/rxjs@^7.8.2/testing?conditions=es2015",
+    "rxjs/fetch": "https://esm.sh/rxjs@^7.8.2/fetch?conditions=es2015",
+    "@angular/common": "https://esm.sh/@angular/common@^21.1.2?external=rxjs",
+    "@angular/core": "https://esm.sh/@angular/core@^21.1.2?external=rxjs",
+    "@angular/compiler": "https://esm.sh/@angular/compiler@^21.1.2?external=rxjs",
+    "@angular/forms": "https://esm.sh/@angular/forms@^21.1.2?external=rxjs",
+    "@angular/platform-browser": "https://esm.sh/@angular/platform-browser@^21.1.2?external=rxjs"
+  }
+}
+</script>
+</head>
+<body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-50 transition-colors duration-500 ease-in-out antialiased overflow-x-hidden">
+  <app-root></app-root>
+</body>
+</html>
